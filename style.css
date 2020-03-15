@@ -26,6 +26,7 @@ body {
 
 }
 .pizza {
+    overflow: hidden;
     max-width: 800px;
     border-radius: 4px;
     box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
@@ -57,4 +58,11 @@ body {
     /*align-self: center;*/
     flex: 0 0 50px;
     background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
