@@ -51,6 +51,12 @@ body {
 .pizza__content {
     flex: 1;
     background: white;
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column ; /*the default for flex direction is row*/
+    /*align-items: center;!*along the cross axis*!*/
+    /*justify-content: center; !*along the main axis*! --- top to bottom*!*/
 
 }
 
@@ -65,4 +71,66 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pizza__title {
+    display: flex;
+
+    /*default for align elements is stretch - cross axis*/
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.pizza__heading {
+    font-size: 20px;
+    /*flex: 1;*/
+    /*margin-right: automatically occupies all the empty space;*/
+    margin-right: auto;
+}
+
+.pizza__tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 100px;
+    margin-left: 7px;
+}
+
+.pizza__tag--1 {
+    background-color: #67b26f;
+
+}
+
+.pizza__tag--2 {
+    background-color: #4ca2cd;
+}
+
+.pizza__description {
+    font-size: 14px;
+}
+
+.pizza__details {
+    display: flex;
+    margin-top: auto;
+
+    /*center items along main aaxis*/
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: flex-start; !*default*!*/
+}
+.pizza__detail {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+
+}
+.emoji {
+    font-size: 20px;
+    margin-right: 3px;
 }
